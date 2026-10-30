@@ -1,0 +1,80 @@
+{
+  "name": "@arksat/wallet-sdk",
+  "version": "0.1.0",
+  "description": "Typed browser wallet integration for Arksat",
+  "license": "MIT",
+  "homepage": "https://docs.arksat.xyz/en/sdk/introduction",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arksats/arksat-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arksats/arksat-sdk/issues"
+  },
+  "keywords": [
+    "arksat",
+    "bitcoin",
+    "arkade",
+    "wallet",
+    "sdk"
+  ],
+  "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "docs",
+    "examples"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./mock": {
+      "types": "./dist/mock.d.ts",
+      "import": "./dist/mock.js"
+    },
+    "./conformance": {
+      "types": "./dist/conformance.d.ts",
+      "import": "./dist/conformance.js"
+    },
+    "./arkade": {
+      "types": "./dist/arksatSdkAdapter.d.ts",
+      "import": "./dist/arksatSdkAdapter.js"
+    }
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "npm run build && node scripts/verify-sdk-tooling.mjs",
+    "check": "node scripts/check-docs.mjs",
+    "example": "node examples/serve.mjs",
+    "prepack": "npm run build && npm run check"
+  },
+  "peerDependencies": {
+    "@arkade-os/sdk": "0.4.79",
+    "@scure/base": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@arkade-os/sdk": {
+      "optional": true
+    },
+    "@scure/base": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@arkade-os/sdk": "0.4.79",
+    "@scure/base": "^2.0.0"
+  }
+}
