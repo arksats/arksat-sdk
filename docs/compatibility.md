@@ -18,8 +18,8 @@ Use getCapabilities to check methods and protocol versions.
 - isArksatProviderError handles cross-bundle and structured-cloned errors.
 - English method contracts, types, examples and distribution checks; Chinese guides are maintained outside the SDK package.
 
-These are local build versions, not a claim of Chrome Web Store or npm publication. Provider API and events remain version 2. Check getCapabilities().methods before calling new methods.
+SDK 0.1.0 is published on npm. Extension 1.0.32 is a local build version and does not claim Chrome Web Store publication. Provider API and events remain version 2. Check getCapabilities().methods before calling new methods.
 
 ## Versioning
 
-0.1.0 is the selected initial public npm version. Earlier local archive version labels were development builds and do not imply prior npm releases.
+0.1.0 is the initial public npm version. Earlier local archive version labels were development builds and do not imply prior npm releases.

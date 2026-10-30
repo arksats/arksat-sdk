@@ -3,9 +3,9 @@
 ## Install
 Install and enable the [Arksat extension](https://chromewebstore.google.com/detail/arksat-wallet/oebdijiadpemhganjpfnaemjcdepijdj). Refresh websites opened before installation.
 
-SDK 0.1.0 is distributed as a package archive and is not published to npm:
+SDK 0.1.0 is available on npm:
 ```sh
-npm install ./arksat-wallet-sdk-0.1.0.tgz
+npm install @arksat/wallet-sdk@0.1.0
 ```
 
 ## Connect

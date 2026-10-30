@@ -6,13 +6,13 @@ Typed integration for the Arksat browser extension: accounts, balances, tokens, 
 
 ## Installation
 
-SDK 0.1.0 is currently distributed as a package archive. npm publication is pending.
+SDK 0.1.0 is available on [npm](https://www.npmjs.com/package/@arksat/wallet-sdk).
 
 ```sh
-npm install ./arksat-wallet-sdk-0.1.0.tgz
+npm install @arksat/wallet-sdk@0.1.0
 ```
 
-Once version 0.1.0 is published to the public npm registry, install it with `npm install @arksat/wallet-sdk@0.1.0`. See [release instructions](docs/releasing.md) for the maintainer preflight and publication command.
+The package is published as `@arksat/wallet-sdk`. See [release instructions](docs/releasing.md) for the maintainer preflight and publication command.
 
 Requires the Arksat browser extension with Provider API 2 and events version 2. ESM; Node.js 18+ for the build environment. Wallet calls run in the browser.
 
